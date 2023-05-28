@@ -91,7 +91,7 @@ export default async function OGImage(req: NextRequest) {
             height: 465,
             display: 'flex',
             flexDirection: 'column',
-            border: '16px solid rgba(0,0,0,0.3)',
+            border: '16px solid rgba(0,0,0,0)',
             borderRadius: 8,
             zIndex: '1'
           }}
@@ -103,35 +103,36 @@ export default async function OGImage(req: NextRequest) {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'space-around',
-              backgroundColor: '#fff',
+              backgroundColor: 'rgba(255,255,255,0.3)',
               padding: 24,
               alignItems: 'center',
               textAlign: 'center'
             }}
           >
-            {pageInfo.detail && (
+            {/* {pageInfo.detail && (
               <div style={{ fontSize: 32, opacity: 0 }}>{pageInfo.detail}</div>
-            )}
+            )} */}
 
             <div
               style={{
                 fontSize: 70,
                 fontWeight: 700,
-                fontFamily: 'Inter'
+                fontFamily: 'Inter',
+                color: '#000',
               }}
             >
               {pageInfo.title}
             </div>
 
-            {pageInfo.detail && (
+            {/* {pageInfo.detail && (
               <div style={{ fontSize: 32, opacity: 0.6 }}>
                 {pageInfo.detail}
               </div>
-            )}
+            )} */}
           </div>
         </div>
 
-        {pageInfo.authorImage && (
+        {/* {pageInfo.authorImage && (
           <div
             style={{
               position: 'absolute',
@@ -154,7 +155,7 @@ export default async function OGImage(req: NextRequest) {
               }}
             />
           </div>
-        )}
+        )} */}
       </div>
     ),
     {

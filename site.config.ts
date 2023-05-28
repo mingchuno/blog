@@ -9,15 +9,15 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  name: 'MC Photography',
+  domain: 'photo.mcor.dev',
   author: 'mingchuno',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'MC Photograhpy',
 
   // social usernames (optional)
-  twitter: '#',
+  twitter: 'mingchuno',
   github: 'mingchuno',
   linkedin: 'mingchuno',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
