@@ -17,7 +17,7 @@ export default siteConfig({
   description: 'MC Photograhpy',
 
   // social usernames (optional)
-  twitter: 'mingchuno',
+  twitter: 'MingChunOr',
   github: 'mingchuno',
   linkedin: 'mingchuno',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
