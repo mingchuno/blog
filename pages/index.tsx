@@ -3,12 +3,13 @@ import * as React from 'react'
 import { NotionPage } from '@/components/NotionPage'
 import { domain } from '@/lib/config'
 import { resolveNotionPage } from '@/lib/resolve-notion-page'
+import { REVALIDATE_TTL } from '@/lib/revalidate'
 
 export const getStaticProps = async () => {
   try {
     const props = await resolveNotionPage(domain)
 
-    return { props, revalidate: 10 }
+    return { props, revalidate: REVALIDATE_TTL }
   } catch (err) {
     console.error('page error', domain, err)
 
