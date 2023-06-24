@@ -6,6 +6,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
   images: {
+    minimumCacheTTL: 60 * 60 * 12, // Let's cache for 12 hours
     domains: [
       'www.notion.so',
       'notion.so',
